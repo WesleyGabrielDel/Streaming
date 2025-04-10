@@ -1,6 +1,4 @@
-* {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+
 
 body {
     background-image: url(cartoes-netflix-700x394.jpg);
@@ -18,11 +16,12 @@ body {
 
 div {
     border: 1px solid black;
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
     background-color: black;
     margin: 150px;
     opacity: 1;
+    justify-content: center;
 }
 
 h3 {
@@ -30,20 +29,38 @@ h3 {
 }
 
 #botao {
+    margin-left: 25px;
     width: 200px;
     height: 50px;
     background-color: red;
     color: white;
+    border-radius: 5px;
 }
 
 #email {
+    margin-left: 25px;
     margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
 }
 
 #telefone {
+    margin-left: 25px;
     margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
 }
 
 #senha {
+    margin-left: 25px;
     margin-bottom: 20px;
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+#coiso {
+    margin-left: 25px;
 }
