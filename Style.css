@@ -1,61 +1,63 @@
-
+*{
+    font-family: sans-serif;
+}
 
 body {
-    background-image: url(cartoes-netflix-700x394.jpg);
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 22, 27);
+    width: 98vw;
+    height: 90vh;
 
 }
 
 .Formulario{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 200px;
     height: 200px;
-    position: center;
-    padding: 20px;
+
 }
 
 div {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
-    height: 500px;
-    background-color: black;
+    height: 400px;
+    background-color: rgb(9, 9, 10);
     margin: 150px;
-    opacity: 1;
-    justify-content: center;
+    border-radius: 20px;
 }
 
 h3 {
-    color: white;
+    color: rgb(248, 44, 45);
 }
 
 #botao {
-    margin-left: 25px;
     width: 200px;
-    height: 50px;
-    background-color: red;
+    height: 40px;
+    background-color: rgb(217, 31, 42) ;
     color: white;
     border-radius: 5px;
 }
 
 #email {
-    margin-left: 25px;
-    margin-bottom: 10px;
     width: 200px;
     border-radius: 5px;
     height: 25px;
 }
 
 #telefone {
-    margin-left: 25px;
-    margin-bottom: 10px;
     width: 200px;
     border-radius: 5px;
     height: 25px;
 }
 
 #senha {
-    margin-left: 25px;
-    margin-bottom: 20px;
     width: 200px;
     border-radius: 5px;
     height: 25px;
@@ -64,3 +66,12 @@ h3 {
 #coiso {
     margin-left: 25px;
 }
+
+.Texto-usuario {
+    background-color: rgb(9, 9, 10);
+    border: 1px solid rgb(58, 59, 63);
+    color: white;
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,139 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #141414;
+}
+
+h1 {
+    color: #e5e5e5;
+}
+
+h3, p{
+    color: #a3a3a3;
+}
+
+.divFilmes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 91vw;
+}
+
+.filmes {
+    width: 300px;
+    height: 170px;
+    box-sizing: border-box;   
+}
+
+#profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#cabecalho {
+    display: flex;
+}
+
+#profile {
+    margin-left: 85vw;
+}
+
+#Nome-site {
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.descricao {
+    margin-left: 15px;
+}
+
+/*Eu estou usando o media pro site ficar responsivo porque a minha tela é beeem maior do que a tela do notebook*/
+
+@media (max-width: 1440px) {
+    * {
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #141414;
+    }
+    
+    h1 {
+        color: #e5e5e5;
+    }
+    
+    h4, p{
+        color: #a3a3a3;
+    }
+    
+    .divFilmes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 97vw;
+    }
+    
+    .filmes {
+        width: 320px;
+        height: 170px;
+        margin-left: 6px;
+        box-sizing: border-box;   
+    }
+
+    #profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    #cabecalho {
+        display: flex;
+        background-color: #0f0f0f;
+    }
+
+    #profile {
+        margin-left: 85vw;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+        margin-left: 7px;
+        margin-top: 30px;
+    }
+
+    .descricao {
+        margin-left: 15px;
+    }
+
+    .Nome-Secoes {
+        margin-left: 7px;
+    }
+
+    #Imagem-banner {
+        width: 800px;
+        height: 450px;
+    }
+
+    #texto {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .filmes:hover, #Imagem-banner:hover{
+        cursor: pointer;
+    }
+    
+}
+    
