@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +8,44 @@
     <title>Streamverse - Home</title>
 </head>
 <body>  
-    <div class="pos">
-        <div id="cabecalho">
-            <p id="Nome-site">Streamverse</p>
-            <div id="profilediv"><img src="Images/No-image-selected.png" alt="" id="profile"></div>
-        </div>
-        <div id="banner">
-            <img src="Images/A substância.jpg" alt="" id="Imagem-banner">
-            <div id="texto">
-                <h1 class="titulo">A substância</h1>
-                <h4>Elisabeth Sparkle, renomada por um programa de aeróbica, enfrenta um golpe devastador quando seu chefe a demite. Em meio ao seu desespero, um laboratório lhe oferece uma substância que promete transformá-la em uma versão aprimorada.</h3>
+    <div class="container">
+        <section id="header">
+            <div id="banner-info">
+                <p id="site-name">Streamverse</p>
+                <img src="Images/No-profile-picture-selected.jpg" alt="" id="profile">
             </div>
-        </div>
-        <p class="Nome-Secoes">Filmes de comédia</p>
-        <section id="comedia" class="divFilmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="comedia1" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="comedia2" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="comedia3" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="comedia4" class="filmes">
         </section>
-        <p class="Nome-Secoes">Filmes de ação</p>
-        <section id="acao" class="divFilmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="acao1" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="acao2" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="acao3" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="acao4" class="filmes">
+        <section id="banner">
+            <img src="Images/A substância.jpg" alt="" id="image-banner">
+            <div id="text">
+                <h1 id="title">A Substância</h1>
+                <h4 id="description">Elisabeth Sparkle, renomada por um programa de aeróbica, enfrenta um golpe devastador quando seu chefe a demite. Em meio ao seu desespero, um laboratório lhe oferece uma substância que promete transformá-la em uma versão aprimorada.</h3>
+            </div>
         </section>
-        <p class="Nome-Secoes">Filmes de Terror</p>
-        <section id="terror" class="divFilmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="terror1" class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="terror2"class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="terror3"class="filmes">
-            <img src="Images/No-image-selected.png" alt="Filme" id="terror4" class="filmes">
+        <p class="section-title">Filmes de comédia</p>
+        <section id="comedy" class="movies-container">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de comédia" id="comedy1" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de comédia" id="comedy2" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de comédia" id="comedy3" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de comédia" id="comedy4" class="movie">
+        </section>
+        <p class="section-title">Filmes de ação</p>
+        <section id="action" class="movies-container">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de ação" id="action1" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de ação" id="action2" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de ação" id="action3" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de ação" id="action4" class="movie">
+        </section>
+        <p class="section-title">Filmes de Terror</p>
+        <section id="horror" class="movies-container">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de terror" id="horror1" class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de terror" id="horror2"class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de terror" id="horror3"class="movie">
+            <img src="Images/No-image-selected.png" alt="Capa do filme de terror" id="horror4" class="movie">
         </section>
     </div>
 </body>
 </html>
 
-<!--Não coloquei as imagens ainda e não defini os alts. Estou tentando deixar meu código o mais limpo possível pra ler melhor ;D-->
+<!--Separei o meu código em seções de filmes e também fiz a das imagens etc. Eu coloquei o nome dos Id/Class do jeito q o professor pediu pra fazer-->
+<!--Tentei deixar o código o mais bem estruturado possível-->

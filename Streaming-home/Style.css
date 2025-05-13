@@ -1,72 +1,12 @@
 * {
-    font-family: sans-serif;
-}
-
-body {
-    background-color: #141414;
-}
-
-h1 {
-    color: #e5e5e5;
-}
-
-h3, p{
-    color: #a3a3a3;
-}
-
-.divFilmes {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 91vw;
-}
-
-.filmes {
-    width: 300px;
-    height: 170px;
-    box-sizing: border-box;   
-}
-
-#profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-#cabecalho {
-    display: flex;
-}
-
-#profile {
-    margin-left: 85vw;
-}
-
-#Nome-site {
-    margin-left: 5px;
-    font-weight: bolder;
-}
-
-#banner {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-}
-
-.descricao {
-    margin-left: 15px;
-}
-
-/*Eu estou usando o media pro site ficar responsivo porque a minha tela é beeem maior do que a tela do notebook*/
-
-@media (max-width: 1440px) {
-    * {
         font-family: sans-serif;
     }
 
     body {
-        background-color: #141414;
+       background-color: #141414;
         display: flex;
         flex-direction: column;
-        
+        justify-content: center;
     }
     
     h1 {
@@ -77,13 +17,14 @@ h3, p{
         color: #a3a3a3;
     }
     
-    .divFilmes {
+    .movies-container {
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 5px;
         width: 97vw;
     }
     
-    .filmes {
+    .movie {
         width: 320px;
         height: 170px;
         margin-left: 6px;
@@ -95,15 +36,19 @@ h3, p{
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        margin-top: 4px;
     }
 
-    #cabecalho {
+    #header {
         display: flex;
+        flex-direction: row;
         background-color: #0f0f0f;
     }
 
     #profile {
         margin-left: 85vw;
+        height: 45px;
+        width: 45px;
         box-sizing: border-box;
     }
 
@@ -116,31 +61,270 @@ h3, p{
         margin-top: 30px;
     }
 
-    .descricao {
+    .description {
         margin-left: 15px;
     }
 
-    .Nome-Secoes {
+    .section-title {
         margin-left: 7px;
     }
 
-    #Imagem-banner {
-        width: 800px;
-        height: 450px;
+    #image-banner {
+        width: 780px;
+        height: 400px;
+        padding: 10px;
         box-sizing: border-box;
     }
 
-    #texto {
+    #text {
         width: 500px;
         display: flex;
         flex-direction: column;
         margin-left: 15px;
     }
 
-    .filmes:hover, #Imagem-banner:hover, #profile:hover{
+    #banner-info {
+        display: flex;
+        flex-direction: row;
+        height: 53px;
+    }
+
+    #site-name {
+        margin-left: 15px;
+        font-weight: bolder;
+    }
+
+    #description {
+        height: 100px;
+    }
+
+    #title {
+        height: 10px;
+    }
+
+    .movie:hover, #image-banner:hover, #profile:hover{
+        cursor: pointer;
+        border: 1px solid white;
+    }
+    
+
+
+@media (max-width: 2560px), (max-width: 1960px) {
+    * {
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    h1 {
+        color: #e5e5e5;
+    }
+
+    p{
+        color: #a3a3a3;
+    }
+
+    .movies-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 97vw;
+    }
+
+    .movie {
+        width: 500px;
+        height: 300x;
+        margin-left: 6px;
+        box-sizing: border-box;   
+    }
+
+    #profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        background-color: #0f0f0f;
+    }
+
+    #profile {
+        margin-left: 89vw;
+        box-sizing: border-box;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+        margin-left: 7px;
+        margin-top: 30px;
+    }
+
+    .description {
+        margin-left: 15px;
+    }
+
+    .section-title {
+        margin-left: 7px;
+    }
+
+    #image-banner {
+        width: 1350px;
+        height: 700px;
+        box-sizing: border-box;
+    }
+
+    #text {
+        width: 555px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    #banner-info {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
+
+    #site-name {
+        margin-left: 10px;
+    }
+
+    #description {
+        height: 100px;
+        color: #a3a3a3;
+        font-size: 15px;
+    }
+
+    #title {
+        height: 10px;
+    }
+
+    .movie:hover, #image-banner:hover, #profile:hover{
+        cursor: pointer;
+        border: 1px solid white;
+}
+} 
+/*Eu estou usando o media pro site ficar responsivo porque a minha tela é beeem maior do que a tela do notebook*/
+
+@media (max-width: 1440px) {
+    * {
+        font-family: sans-serif;
+    }
+
+    body {
+       background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    h1 {
+        color: #e5e5e5;
+    }
+    
+    h4, p{
+        color: #a3a3a3;
+    }
+    
+    .movies-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        width: 97vw;
+    }
+    
+    .movie {
+        width: 320px;
+        height: 170px;
+        margin-left: 6px;
+        box-sizing: border-box;   
+        border: none;
+    }
+
+    #profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 4px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        background-color: #0f0f0f;
+    }
+
+    #profile {
+        margin-left: 85vw;
+        height: 45px;
+        width: 45px;
+        box-sizing: border-box;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+        margin-left: 7px;
+        margin-top: 30px;
+    }
+
+    .description {
+        margin-left: 15px;
+    }
+
+    .section-title {
+        margin-left: 7px;
+    }
+
+    #image-banner {
+        width: 780px;
+        height: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #text {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    #banner-info {
+        display: flex;
+        flex-direction: row;
+        height: 53px;
+    }
+
+    #site-name {
+        margin-left: 15px;
+        font-weight: bolder;
+    }
+
+    #description {
+        height: 100px;
+    }
+
+    #title {
+        height: 10px;
+    }
+
+    .movie:hover, #image-banner:hover, #profile:hover{
         cursor: pointer;
         border: 1px solid white;
     }
     
 }
-    
