@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 200px;
+    width: 200px; 
     height: 200px;
 
 }
@@ -45,11 +45,6 @@ h3 {
     border-radius: 5px;
 }
 
-#email {
-    width: 200px;
-    border-radius: 5px;
-    height: 25px;
-}
 
 #telefone {
     width: 200px;
@@ -72,6 +67,12 @@ h3 {
     border: 1px solid rgb(58, 59, 63);
     color: white;
     margin-top: 10px;
+}
+
+p {
+    color: white;
+    height: 3px;
+    font-size: 14px;
 }
 
 
